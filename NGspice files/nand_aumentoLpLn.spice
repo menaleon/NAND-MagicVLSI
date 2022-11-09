@@ -1,0 +1,17 @@
+* SPICE3 file created from nand_normal.ext - technology: scmos
+
+.option scale=1u
+
+M1000 vdd b out w_n13_2# pfet w=10 l=6
++  ad=160 pd=72 as=90 ps=38
+M1001 a_2_n17# a gnd Gnd nfet w=10 l=6
++  ad=90 pd=38 as=105 ps=56
+M1002 out a vdd w_n13_2# pfet w=10 l=6
++  ad=0 pd=0 as=0 ps=0
+M1003 out b a_2_n17# Gnd nfet w=10 l=6
++  ad=80 pd=36 as=0 ps=0
+C0 gnd 0 8.22fF **FLOATING
+C1 out 0 3.38fF **FLOATING
+C2 b 0 8.62fF **FLOATING
+C3 a 0 8.62fF **FLOATING
+C4 vdd 0 11.75fF **FLOATING
