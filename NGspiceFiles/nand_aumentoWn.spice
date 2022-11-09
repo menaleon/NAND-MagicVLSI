@@ -1,0 +1,35 @@
+* SPICE3 file created from nand_aumentoWn.ext - technology: scmos
+
+.option scale=1u
+
+.include ./ami05.txt
+Vpower Vdd GND 5
+Vin a gnd pulse(0,5,10n,1n,1n,10n,20n)
+Vin2 b gnd pulse(0,5,10n,1n,10n,20n,20n)
+
+M1000 a_1_n20# a gnd Gnd nfet w=17 l=2
++  ad=153 pd=52 as=173 ps=70
+M1001 out a vdd w_n11_6# pfet w=10 l=2
++  ad=90 pd=38 as=180 ps=76
+M1002 out b a_1_n20# Gnd nfet w=17 l=2
++  ad=153 pd=52 as=0 ps=0
+M1003 vdd b out w_n11_6# pfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 gnd 0 4.93fF 
+C1 out 0 3.38fF 
+C2 b 0 4.45fF 
+C3 a 0 4.45fF 
+C4 vdd 0 7.99fF 
+
+
+.control 
+run
+set color0=white
+set color1=black
+set color2=blue
+set color3=red
+set xbrushwidth=5
+plot a b out
+.endc
+.tran 0.01 40n
+.end

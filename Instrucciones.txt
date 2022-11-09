@@ -1,0 +1,9 @@
+Abra su distro de Linux
+
+cd pathArchivosSpice
+
+ngspice fileName.spice
+
+
+
+

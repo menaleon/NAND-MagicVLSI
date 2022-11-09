@@ -1,0 +1,36 @@
+* SPICE3 file created from nand_normal.ext - technology: scmos
+
+.option scale=1u
+
+.include ./ami05.txt
+Vpower Vdd GND 5
+Vin a gnd pulse(0 5 10n 1n 1n 10n 20n)
+Vin2 b gnd pulse(0 5 10n 1n 10n 20n 20n)
+
+M1000 vdd b out w_n13_2# pfet w=17 l=6
++  ad=272 pd=100 as=153 ps=52
+M1001 out b a_2_n24# Gnd nfet w=17 l=6
++  ad=136 pd=50 as=153 ps=52
+M1002 out a vdd w_n13_2# pfet w=17 l=6
++  ad=0 pd=0 as=0 ps=0
+M1003 a_2_n24# a gnd Gnd nfet w=17 l=6
++  ad=0 pd=0 as=161 ps=70
+C0 b w_n13_2# 2.14fF
+C1 a w_n13_2# 2.14fF
+C2 gnd 0 6.82fF 
+C3 out 0 3.38fF 
+C4 b 0 8.62fF 
+C5 a 0 8.62fF 
+C6 vdd 0 11.75fF 
+
+.control 
+run
+set color0=white
+set color1=black
+set color2=blue
+set color3=red
+set xbrushwidth=5
+plot a b out
+.endc
+.tran 0.01 40n
+.end
