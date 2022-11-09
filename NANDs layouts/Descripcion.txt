@@ -1,0 +1,15 @@
+Nand1: tamaño estándar en pdiff y ndiff. Distancias mínimas.
+
+Nand2: aumento Wp. Lo demás se mantiene.
+
+Nand3: aumento Wn. Lo demás se mantiene.
+
+Nand4: aumento Lp. Lo demás se mantiene. *
+
+Nand5: aumento Ln. Lo demás se mantiene. *
+
+Nand6: aumento Wp y Wn.
+
+Nand7: aumento Ln y Lp.
+
+Nand8: aumento todo.
