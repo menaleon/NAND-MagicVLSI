@@ -1,0 +1,7 @@
+El tiempo de propagacion es la diferencia entre
+el tiempo donde la entrada cambia y se tiene un 50%
+de su valor máximo y el tiempo donde la salida responde
+en un 50% de su valor máximo a dicho cambio de dicha entrada.
+
+
+50%Vout = 2.5 V
