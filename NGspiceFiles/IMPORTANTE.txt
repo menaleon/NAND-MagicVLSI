@@ -1,0 +1,5 @@
+Para graficar corriente, usar la directiva
+
+plot i(Vpower) 
+
+en vez de plot a b out
